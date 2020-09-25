@@ -1,13 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FHT
 {
+    /// <summary>
+    /// Implementation of FHT alghoritm
+    /// </summary>
     class FHT
     {
+        /// <summary>
+        /// Convert signal to frequences
+        /// </summary>
         public static double[] CalcForward(int[] input)
         {
             int N = input.Length;
@@ -25,6 +27,9 @@ namespace FHT
             return result;
         }
 
+        /// <summary>
+        /// Convert frequences to signal
+        /// </summary>
         public static double[] CalcBackward(double[] input)
         {
             int N = input.Length;
